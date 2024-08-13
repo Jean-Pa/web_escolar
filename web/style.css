@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    /* background-color: antiquewhite; */
+}
+.body{
+    background-color: antiquewhite;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: rgb(54, 8, 220);
+}
+.header .btn button{
+    font-weight: 700;
+    color: blue;
+    padding: 9px 25px;
+    background: rgb(185, 222, 185);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+.header .btn button:hover{
+    transform: scale(1.1);
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.main section{
+    height: 500px;
+    background-color: rgb(168, 188, 67);
+    border: 1px solid blue;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+.main .inicio{
+    display: flex;
+    width: 100%;
+    min-height: 550px;
+}
+.main .descripcion{
+    
+}
+.main .alumnos{
+    display: grid;
+    place-items: center; 
+    grid-template-columns: repeat(2, auto); 
+    gap: 20px; 
+}
+.main .alumnos img{
+    height: 70%;
+    width:70%;
+    border-radius: 20px;
+
+}
+
+.main .descripcion, .alumnos{
+    width: 48%;
+    float: left;
+    margin: 1%;
+    box-sizing: border-box;
+    
+    padding: 10px;
+}

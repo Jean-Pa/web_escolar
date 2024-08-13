@@ -16,9 +16,20 @@ $servidor="mysql:dbname=".DB.";host=".SERVIDOR;
 
 try{
     $pdo=new PDO($servidor, USUARIO, PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"));
-    echo "conexion exitosa";
+  //  echo "conexion exitosa";
 }catch(PDOException $e){
     print_r($e);
+    
     echo "Error no se pudo conectar a la base de datos";
 }
+
+date_default_timezone_set("America/Lima");
+$fechaHora=date('y-m-d H:i:s');
+
+$fecha_actual=date('Y-m-d');
+$dia_actual=date('d');
+$mes=date('m');
+$anio=date('Y');
+
+//echo $anio;
 ?>
